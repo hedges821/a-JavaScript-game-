@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--Michael Hedges - WEB 114
+Final Project
+12/3/2019-->
+<html lang="en">
+<head>
+	<title>JavaScript Quiz! -- Michael Hedges</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="styles/style.css">
+	
+</head>
+
+<body>
+
+	<div id="container">
+	<header>
+		<h1>A JavaScript Game by Michael Hedges</h1>
+	</header>
+		<nav>
+		</nav>
+	<main>
+		<h2 id="hello">Hello!</h2>
+
+
+<!--Question 1-->
+		<h3 id="question1" class="questionHeader">Question 1</h3>
+			<p id="userQuestion1">What was JavaScript going to be initially called?</p>
+				<div>
+					<label for="wrong1"><input type="radio" name="question1" value="ECMAScript" id="wrong1">ECMAScript</label>
+					<label for="correct1"><input type="radio" name="question1" value="LiveScript" id="correct1" class="correctAnswer">LiveScript</label>
+					<label for="wrong2"><input type="radio" name="question1" value="CoffeeScript" id="wrong2">CoffeeScript</label>
+					<label for="wrong3"><input type="radio" name="question1" value="TeaScript" id="wrong3">TeaScript</label>
+				</div>
+
+				<button id="answer1" class="floatLeft">Answer</button>
+					<div id="question1Answer" class="floatLeft">
+					Incorrect
+					</div>
+
+
+<!--Question 2-->
+		<h3 id="question2" class="questionHeader">Question 2</h3>
+			<p id="userQuestion2">There are certain words that JavaScript reserves for programming, called Keywords, or Reserved Words.  How many do you know?</p>
+
+				<label for="correct2">Type in a word below to find out if it is a JavaScript keyword.</label>
+					<input type="text" name="word" id="correct2">
+						<button id="answer2">Is it a keyword?</button>
+
+				<div id="question2Answer">
+				</div>
+
+				<div id="question2CorrectWords">
+				</div>
+
+				<div id="keywordsGuessed">
+				</div>
+
+
+<!--Question 3 -->
+		<h3 id="question3" class="questionHeader">Question 3</h3>
+			<p id="userQuestion3">Select the correct built-in JavaScript function to make 9 + 4 = 13</p>
+				
+				<div>
+					<label for="wrong4"><input type="radio" name="question3" value="tostring" id="wrong4">toString()</label>
+					<label for="wrong5"><input type="radio" name="question3" value="concat" id="wrong5">Concat()</label>
+					<label for="correct3"><input type="radio" name="question3" value="number" id="correct3" class="correctAnswer">Number()</label>
+					<label for="wrong6"><input type="radio" name="question3" value="tofixed" id="wrong6">toFixed()</label>
+				</div>
+
+				<button id="answer3" class="floatLeft">Answer</button>
+					<div id="question3Answer" class="floatLeft">
+					Incorrect
+					</div>
+
+
+<!--Question 4-->
+		<h3 id="question4" class="questionHeader">Question 4</h3>
+			<p id="userQuestion4">Math in JavaScript </p>
+
+				<label for="firstNumber"></label><input type="number" name="firstNumber" id="firstNumber" min="0" max="10">
+
+					<select id="operator">
+						<option value="add">+</option>
+						<option value="subtract">-</option>
+						<option value="multiply">*</option>
+						<option value="divide">/</option>
+						<option value="modulus">%</option>
+						<option value="exponent">**</option>
+					</select>
+
+				<label for="nextNumber"></label><input type="number" name="nextNumber" id="nextNumber" min="0" max="10">
+
+					<button id="answer4">Solution</button>
+
+				<div id="answer4ShowSolution">
+				</div>
+
+
+<!--Question 5-->
+		<h3 id="question5" class="questionHeader">Question 5</h3>
+			<p id="userQuestion5">Which is an example of a valid name for a variable?</p>
+				
+				<div>
+					<label for="wrong7"><input type="radio" name="question5" value="!hello" id="wrong7"><span class="blueColor">let</span> !hello</label>
+					<label for="correct5"><input type="radio" name="question5" value="userName" id="correct5" class="correctAnswer"><span class="blueColor">let</span> userName</label>
+					<label for="wrong8"><input type="radio" name="question5" value="5S1l" id="wrong8"><span class="blueColor">let</span> 5S1l</label>
+					<label for="wrong9"><input type="radio" name="question5" value="allOfTheAbove" id="wrong9">All of the above</label>
+				</div>
+
+				<button id="answer5" class="floatLeft">Answer</button>
+					<div id="question5Answer" class="floatLeft">
+					Incorrect
+				</div>
+
+
+<!--Question 6-->
+		<h3 id="question6" class="questionHeader">Question 6</h3>
+			<p id="userQuestion6">What will be the first value that these logical statements return?</p>
+
+				<label id="question6part1" >1 && 0 && "water"</label>
+					<input type="text" id="question6part1Answer">
+						<button id="button6part1">Answer</button>
+				<div id="q6part1Answer" class="leftPad"></div>
+
+
+				<label id="question6part2">null || 1 || undefined || 0</label>
+					<input type="text" id="question6part2Answer">
+						<button id="button6part2">Answer</button>
+				<div id="q6part2Answer" class="leftPad"></div>
+				
+				
+<!--Question 7-->
+		<h3 id="question7" class="questionHeader">Question 7</h3>
+			<p id="userQuestion7">Which is not a primitive type?</p>
+			
+				<div>
+					<label for="wrong10"><input type="radio" name="question7" value="string" id="wrong10">string</label>
+					<label for="wrong11"><input type="radio" name="question7" value="number" id="wrong11">number</label>
+					<label for="wrong12"><input type="radio" name="question7" value="boolean" id="wrong12">boolean</label>
+					<label for="wrong13"><input type="radio" name="question7" value="symbol" id="wrong13">symbol</label>
+					<label for="wrong14"><input type="radio" name="question7" value="null" id="wrong14">null</label>
+					<label for="wrong15"><input type="radio" name="question7" value="undefined" id="wrong15">undefined</label>
+					<label for="correct7"><input type="radio" name="question7" value="allOfTheAbove7" id="correct7">All of the above are correct</label>
+				</div>
+				
+				<button id="answer7" class="floatLeft">Answer</button>
+					<div id="question7Answer" class="floatLeft">
+					Incorrect
+					</div>
+
+
+<!--Question 8-->
+		<h3 id="question8" class="questionHeader">Question 8</h3>
+			<p id="userQuestion8">How do you change a string in JavaScript?</p>
+			
+				<div>
+					<label for="correct8"><input type="radio" name="question8" value="string" id="correct8">Strings are immutable, and can only be changed by assigning a new string to the variable.</label>
+					<label for="wrong16"><input type="radio" name="question8" value="number" id="wrong16">Use a for-loop iterate over each letter.</label>
+					<label for="wrong17"><input type="radio" name="question8" value="boolean" id="wrong17">Use a special string method that changes the string.</label>
+					<label for="wrong18"><input type="radio" name="question8" value="symbol" id="wrong18">Find the index of the word you want to change.</label>
+				</div>
+				
+				<button id="answer8" class="floatLeft">Answer</button>
+					<div id="question8Answer" class="floatLeft">
+					Incorrect
+					</div>
+
+	</main>
+		<footer>
+			Copyright &copy; Michael Hedges 2019<br>
+			<a href="mailto:mhedges4@stumail.jccc.edu">mhedges4@stumail.jccc.edu</a><br>
+			Source:&nbsp;&nbsp;<a href="https://javascript.info/" target="blank">javascript.info</a>	
+		</footer>
+
+	</div>
+	
+<script src="js/final.js"></script>
+
+</body>
+</html>

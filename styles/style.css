@@ -1,0 +1,254 @@
+/*--Michael Hedges
+Final Project
+12/3/2019--*/
+
+
+/*--Color Palette--*/
+/*--e0edff  <--background color,
+/*--6b84a8
+/*--2c4870
+
+/*--246d5e
+/*--62a396
+/*--04362c
+
+/*--3c3176
+
+
+
+
+/*--Document styles--*/
+* {
+	box-sizing: border-box;
+}
+
+header {
+	padding: 1% 5%;
+	background: #2c4870;
+}
+
+h1 {
+	font-family: "Times New Roman", serif;
+	color: #fff;
+	text-shadow: 1px 1px 4px #04362c;
+}
+
+h2, h3 {
+	padding-top: 1%;
+	padding-left: 2%;
+	line-height: 150%;
+	margin-top: 5%;
+}
+
+p {
+	padding: 0 4%;
+}
+
+dl {
+	margin-left: 0;
+	line-height: 150%;
+}
+
+dt {
+	font-weight: bold;
+	padding-left: 2%
+}
+
+dd {
+	padding-bottom: 2%;
+	padding-left: 2%
+}
+
+code {
+	background-color: #ccc;
+}
+
+pre code {
+	border: 1px solid #999;
+	background-color: #ccc;
+	display: block;
+	padding: 20px;
+	margin-left: 6%;
+	margin-right: 40%;
+}
+
+footer {
+	text-align: center;
+	font-size: small;
+	font-style: italic;
+	margin-top: 10%;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 3px groove #6b84a8;
+	border-radius: 7px;
+}
+
+footer a:hover {
+	color: #6b84a8;
+}
+
+img {
+	max-width: 100%;
+}
+
+label {
+	display: block;
+	text-align: left;
+	padding-right: 2%;
+	padding-left: 5%;
+}
+
+input {
+	margin-bottom: 2%;
+}
+
+input[type="number"] {
+	padding-left: 5%;
+}
+
+button {
+	margin-left: 5%;
+}
+
+input[type="text"] {
+	margin-top: 1%;
+	margin-left: 5%;
+}
+
+
+
+/*--IDs--*/
+#container {
+	background-color: #e0edff;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	box-shadow: 3px 3px 3px #000;
+	border: 1px solid #000;
+}
+
+#question1Answer {
+	padding-top: 3px;
+	padding-left: 1%;
+	padding-right: 1%;
+	display: none;
+}
+
+#question2Answer {
+	padding-top: 2%;
+	padding-left: 5%;
+	display: none;
+}
+
+#question2CorrectWords, #keywordsGuessed {
+	padding-top: 2%;
+	padding-left: 5%;
+	display: none;
+}
+
+#question3Answer {
+	padding-top: 3px;
+	padding-left: 1%;
+	padding-right: 1%;
+	display: none;
+}
+
+#firstNumber, #operator, #nextNumber, #answer4, #answer4ShowSolution {
+	float: left;
+	display: inline-block;
+}
+
+#firstNumber {
+	margin-left: 5%;
+}
+
+#answer4ShowSolution, #question5Answer {
+	padding-left: 5%;
+	display: none;
+	padding-top: 3px;
+	padding-right: 1%;
+}
+
+#question5 {
+	margin-top: 7%;
+}
+
+#question5Answer {
+	padding-left: 1%;
+}
+	
+#queryRed {
+	margin-top: 5%;
+}
+
+#question6part1, #question6part2 {
+	margin-top: 4%;
+}
+
+#q6part1Answer, #q6part2Answer {
+	display: none;
+}
+
+#question7Answer, #question8Answer {
+	display: none;
+	padding-left: 1%;
+	padding-top: 3px;
+	padding-right: 1%;
+}
+
+
+/*--Classes--*/
+.floatLeft {
+	float: left;
+}
+
+.blueColor {
+	color: #42a5f5;
+}
+
+.leftPad {
+	padding-left: 5%;
+}
+
+
+/*--Tablet--*/
+@media only screen and (max-width: 64em) {
+#container {
+	width: auto;
+}
+	
+
+/*Media queries require a closing brace*/
+}
+
+/*--Phone--*/
+@media only screen and (max-width: 37.5em) {
+#container {
+	width: auto;
+}
+
+main {
+	width: 100%;
+	background-color: #fff;
+}
+
+footer {
+	background-color: #fff;
+	text-align: left;
+	font-size: small;
+	font-style: italic;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 3px groove #AAD799;
+	border-radius: 7px;
+}
+
+footer a:hover {
+	color: #6b84a8;
+}
+
+/*Media queries require a closing brace*/
+}
